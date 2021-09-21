@@ -15,7 +15,7 @@ class Hotel:
 
     def build_hotel(self, floors, rooms_on_each_floor):
         for floor in range(1, floors + 1):
-            room_sequence = list(string.ascii_lowercase)[0: rooms_on_each_floor]
+            room_sequence = list(string.ascii_uppercase)[0: rooms_on_each_floor]
             if floor % 2 != 0:
                 self.hotel.append([str(floor) + room for room in room_sequence])
             else:
